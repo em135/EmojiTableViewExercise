@@ -39,8 +39,8 @@ extension EmojiViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let emoji = emojies[indexPath.item]
         let cell = tableView.dequeueReusableCell(withIdentifier: "emojiCell", for: indexPath) as! EmojiTableViewCell
-        cell.emojiLabel.text = emoji.title
-        cell.titleLabel.text = emoji.description
+        cell.emojiLabel.text = emoji.emoji
+        cell.titleLabel.text = emoji.title
         return cell
     }
 }
@@ -49,7 +49,7 @@ extension EmojiViewController: UITableViewDelegate {
     // This function gets executed when a cell is selected
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let emoji = emojies[indexPath.item]
-        let alert = UIAlertController(title: emoji.title, message: emoji.description, preferredStyle: UIAlertController.Style.alert)
+        let alert = UIAlertController(title: emoji.emoji, message: emoji.title, preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
