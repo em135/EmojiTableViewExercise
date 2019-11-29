@@ -14,8 +14,8 @@
 		20177B95236ADFC600791116 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20177B94236ADFC600791116 /* Assets.xcassets */; };
 		20177B98236ADFC600791116 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20177B96236ADFC600791116 /* LaunchScreen.storyboard */; };
 		20177BA0236AE89E00791116 /* EmojiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20177B9F236AE89E00791116 /* EmojiManager.swift */; };
-		20177BA2236AE8BC00791116 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20177BA1236AE8BC00791116 /* Emoji.swift */; };
 		20177BA4236AEA9800791116 /* EmojiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20177BA3236AEA9800791116 /* EmojiTableViewCell.swift */; };
+		20CFBDC6238824F0001210C3 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20CFBDC4238824F0001210C3 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +28,8 @@
 		20177B97236ADFC600791116 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20177B99236ADFC600791116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20177B9F236AE89E00791116 /* EmojiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiManager.swift; sourceTree = "<group>"; };
-		20177BA1236AE8BC00791116 /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 		20177BA3236AEA9800791116 /* EmojiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTableViewCell.swift; sourceTree = "<group>"; };
+		20CFBDC5238824F0001210C3 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				20177B9F236AE89E00791116 /* EmojiManager.swift */,
-				20177BA1236AE8BC00791116 /* Emoji.swift */,
+				20CFBDC4238824F0001210C3 /* Model.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -179,8 +179,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20177BA2236AE8BC00791116 /* Emoji.swift in Sources */,
 				20177BA0236AE89E00791116 /* EmojiManager.swift in Sources */,
+				20CFBDC6238824F0001210C3 /* Model.xcdatamodeld in Sources */,
 				20177B90236ADFC000791116 /* EmojiViewController.swift in Sources */,
 				20177B8C236ADFC000791116 /* AppDelegate.swift in Sources */,
 				20177BA4236AEA9800791116 /* EmojiTableViewCell.swift in Sources */,
@@ -382,6 +382,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		20CFBDC4238824F0001210C3 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				20CFBDC5238824F0001210C3 /* Model.xcdatamodel */,
+			);
+			currentVersion = 20CFBDC5238824F0001210C3 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 20177B80236ADFC000791116 /* Project object */;
 }
